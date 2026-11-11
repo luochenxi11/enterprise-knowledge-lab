@@ -1,0 +1,2 @@
+document_id,title,source,source_url,source_type,language,raw_file,normalized_file
+doc_001,What is Azure AI Search?,Microsoft Learn,https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search,html,en-us,datasets/raw/html/doc_001_azure_search_overview.html,datasets/normalized/markdown/doc_001_azure_search_overview.md

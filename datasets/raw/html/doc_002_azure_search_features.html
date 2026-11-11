@@ -1,0 +1,1700 @@
+ <!DOCTYPE html>
+		<html
+			class="layout layout-holy-grail   show-table-of-contents conceptual show-breadcrumb default-focus"
+			lang="en-us"
+			dir="ltr"
+			data-authenticated="false"
+			data-auth-status-determined="false"
+			data-target="docs"
+			x-ms-format-detection="none"
+		>
+			
+		<head>
+			<title>Features and Capabilities - Azure AI Search | Microsoft Learn</title>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<meta name="color-scheme" content="light dark" />
+
+			<meta name="description" content="Explore Azure AI Search features by category, including full-text search, vector search, AI enrichment, semantic ranking, and security capabilities." />
+			<link rel="canonical" href="https://learn.microsoft.com/en-us/azure/search/search-features-list" /> 
+
+			<!-- Non-customizable open graph and sharing-related metadata -->
+			<meta name="twitter:card" content="summary_large_image" />
+			<meta name="twitter:site" content="@MicrosoftLearn" />
+			<meta property="og:type" content="website" />
+			<meta property="og:image:alt" content="Microsoft Learn" />
+			<meta property="og:image" content="https://learn.microsoft.com/en-us/media/open-graph-image.png" />
+			<!-- Page specific open graph and sharing-related metadata -->
+			<meta property="og:title" content="Features and Capabilities - Azure AI Search" />
+			<meta property="og:url" content="https://learn.microsoft.com/en-us/azure/search/search-features-list" />
+			<meta property="og:description" content="Explore Azure AI Search features by category, including full-text search, vector search, AI enrichment, semantic ranking, and security capabilities." />
+			<meta name="platform_id" content="54b1cd3e-1ebc-6f29-7586-158350aa9acf" /> <meta name="scope" content="Azure" />
+			<meta name="locale" content="en-us" />
+			 
+			<meta name="uhfHeaderId" content="azure-ai-foundry" />
+
+			<meta name="page_type" content="conceptual" />
+
+			<!--page specific meta tags-->
+			
+
+			<!-- custom meta tags -->
+			
+		<meta name="breadcrumb_path" content="../breadcrumb/azure-ai/toc.json" />
+	
+		<meta name="feedback_help_link_url" content="https://learn.microsoft.com/en-us/answers/tags/109/azure-cognitive-search" />
+	
+		<meta name="feedback_help_link_type" content="get-help-at-qna" />
+	
+		<meta name="feedback_product_url" content="https://feedback.azure.com/d365community/forum/9325d19e-0225-ec11-b6e6-000d3a4f07b8" />
+	
+		<meta name="feedback_system" content="Standard" />
+	
+		<meta name="permissioned-type" content="public" />
+	
+		<meta name="recommendations" content="true" />
+	
+		<meta name="recommendation_types" content="Training" />
+	
+		<meta name="recommendation_types" content="Certification" />
+	
+		<meta name="ms.suite" content="office" />
+	
+		<meta name="author" content="haileytap" />
+	
+		<meta name="learn_banner_products" content="azure" />
+	
+		<meta name="manager" content="mcleans" />
+	
+		<meta name="ms.author" content="haileytapia" />
+	
+		<meta name="ms.collection" content="ce-skilling-ai-copilot" />
+	
+		<meta name="ms.update-cycle" content="90-days" />
+	
+		<meta name="ms.service" content="azure-ai-search" />
+	
+		<meta name="ms.custom" content="ignite-2024" />
+	
+		<meta name="ms.topic" content="concept-article" />
+	
+		<meta name="ms.date" content="2026-08-05T00:00:00Z" />
+	
+		<meta name="ai-usage" content="ai-assisted" />
+	
+		<meta name="document_id" content="5990746c-7b98-e529-ac29-7ce64b75d5b6" />
+	
+		<meta name="document_version_independent_id" content="51527c23-39d8-ea5d-98fb-3f842f6646b0" />
+	
+		<meta name="updated_at" content="2026-09-17T22:12:00Z" />
+	
+		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/azure-ai-docs-pr/blob/live/articles/search/search-features-list.md" />
+	
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/azure-ai-docs-pr/blob/467af1637165da567e40d26fb684c0da88b1b10f/articles/search/search-features-list.md" />
+	
+		<meta name="git_commit_id" content="467af1637165da567e40d26fb684c0da88b1b10f" />
+	
+		<meta name="site_name" content="Docs" />
+	
+		<meta name="depot_name" content="Learn.azure-ai" />
+	
+		<meta name="schema" content="Conceptual" />
+	
+		<meta name="toc_rel" content="toc.json" />
+	
+		<meta name="word_count" content="2338" />
+	
+		<meta name="asset_id" content="search/search-features-list" />
+	
+		<meta name="moniker_range_name" content="" />
+	
+		<meta name="item_type" content="Content" />
+	
+		<meta name="source_path" content="articles/search/search-features-list.md" />
+	
+		<meta name="previous_tlsh_hash" content="C0B73C62850DC221BF8167822916FB9159F484886AF02FDD08366553D4093CB70FA97DFFEF27A3181224476701E3B755E1C2A73EA4DE73121EA6D4BD016C7292A79537F7A1" />
+	
+		<meta name="github_feedback_content_git_url" content="https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/search/search-features-list.md" />
+	
+		<meta name="markdown_url" content="https://learn.microsoft.com/en-us/azure/search/search-features-list?accept=text/markdown" />
+	 
+		<meta name="cmProducts" content="https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/12ed19f9-ebdf-4c8a-8bcd-7a681836774d" data-source="generated" />
+	
+		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/45da903a-8cff-40ca-99bf-9237f80d6982" data-source="generated" />
+	
+		<meta name="spProducts" content="https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/3a764584-4f97-452b-8f1d-36f19b12f6ae" data-source="generated" />
+	
+		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/7af51462-ed96-4b66-aefd-ea77337d1b96" data-source="generated" />
+	
+
+			<!-- Apply persisted/system theme before first paint to prevent wrong-theme flash when scripts are deferred. -->
+			<script id="theme-preference">
+				(function () {
+			try {
+				var stored = localStorage.getItem('theme');
+				var theme = /^(light|dark|high-contrast)$/.test(stored)
+					? stored
+					: matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+				document.documentElement.classList.add('theme-' + theme);
+			} catch (e) {}
+		})();;
+			</script>
+
+			<script id="atlas-layout-preferences">
+				(function () {
+			try {
+				var state = JSON.parse(localStorage.getItem('atlas-layout-preferences') || '{}');
+				var view = state["docs-layout-persistence"] || {};
+				var excludesKey = "";
+				var blocked = {};
+				if (excludesKey) {
+					var exclusions = JSON.parse(localStorage.getItem('atlas-layout-exclusions') || '{}');
+					if (Object.prototype.hasOwnProperty.call(exclusions, excludesKey)) {
+						var scoped = exclusions[excludesKey];
+						if (scoped) {
+							if (typeof scoped === 'object') blocked = scoped;
+						}
+					}
+				}
+				var html = document.documentElement;
+				for (var c in view) {
+					if (Object.prototype.hasOwnProperty.call(blocked, c)) continue;
+					if (view[c]) html.classList.add(c);
+					else html.classList.remove(c);
+				}
+			} catch (e) {}
+		})();;
+			</script>
+
+			<!-- assets and js globals -->
+			
+			<link rel="stylesheet" href="/static/assets/0.4.03599.8368-c2fd945c/styles/site.css" />
+			
+			<script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js"></script>
+			<!-- Keep this URL in sync with oneDSScriptSelector in instrumentation/one-ds.ts. -->
+			<script async src="https://js.monitor.azure.com/scripts/c/ms.jsll-4.min.js"></script>
+			
+
+			<!-- msdocs global object -->
+			<script id="msdocs-script">
+		var msDocs = {
+  "environment": {
+    "accessLevel": "online",
+    "azurePortalHostname": "portal.azure.com",
+    "reviewFeatures": false,
+    "supportLevel": "production",
+    "systemContent": true,
+    "siteName": "learn",
+    "legacyHosting": false
+  },
+  "data": {
+    "contentLocale": "en-us",
+    "contentDir": "ltr",
+    "userLocale": "en-us",
+    "userDir": "ltr",
+    "pageTemplate": "Conceptual",
+    "layoutStateStorageKey": "docs-layout-persistence",
+    "brand": "azure",
+    "context": {},
+    "standardFeedback": true,
+    "showFeedbackReport": false,
+    "feedbackHelpLinkType": "get-help-at-qna",
+    "feedbackHelpLinkUrl": "https://learn.microsoft.com/en-us/answers/tags/109/azure-cognitive-search",
+    "feedbackSystem": "Standard",
+    "feedbackGitHubRepo": "MicrosoftDocs/azure-docs",
+    "feedbackProductUrl": "https://feedback.azure.com/d365community/forum/9325d19e-0225-ec11-b6e6-000d3a4f07b8",
+    "extendBreadcrumb": false,
+    "isEditDisplayable": false,
+    "isPrivateUnauthorized": false,
+    "hideViewSource": false,
+    "isPermissioned": false,
+    "hasRecommendations": true
+  },
+  "functions": {}
+};;
+	</script>
+
+			<!-- base scripts, msdocs global should be before this -->
+			<script
+				src="/static/assets/0.4.03599.8368-c2fd945c/scripts/en-us/index-docs.js"
+				async
+			></script>
+			
+
+			<!-- json-ld -->
+			
+		</head>
+	
+			<body
+				id="body"
+				data-bi-name="body"
+				class="layout-body "
+				lang="en-us"
+				dir="ltr"
+			>
+				<header class="layout-body-header background-color-body-medium">
+		<div class="header-holder has-default-focus">
+			
+		<a
+			href="#main"
+			
+			style="z-index: 1070"
+			class="outline-color-text visually-hidden-until-focused position-fixed inner-focus focus-visible top-0 left-0 right-0 padding-xs text-align-center background-color-body"
+			
+		>
+			Skip to main content
+		</a>
+	
+		<a
+			href="#"
+			data-skip-to-ask-learn
+			style="z-index: 1070"
+			class="outline-color-text visually-hidden-until-focused position-fixed inner-focus focus-visible top-0 left-0 right-0 padding-xs text-align-center background-color-body"
+			hidden
+		>
+			Skip to Ask Learn chat experience
+		</a>
+	
+
+			<div hidden id="cookie-consent-holder" data-test-id="cookie-consent-container"></div>
+			<!-- Unsupported browser warning -->
+			<div
+				id="unsupported-browser"
+				style="background-color: white; color: black; padding: 16px; border-bottom: 1px solid grey;"
+				hidden
+			>
+				<div style="max-width: 800px; margin: 0 auto;">
+					<p style="font-size: 24px">This browser is no longer supported.</p>
+					<p style="font-size: 16px; margin-top: 16px;">
+						Upgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support.
+					</p>
+					<div style="margin-top: 12px;">
+						<a
+							href="https://go.microsoft.com/fwlink/p/?LinkID=2092881 "
+							style="background-color: #0078d4; border: 1px solid #0078d4; color: white; padding: 6px 12px; border-radius: 2px; display: inline-block;"
+						>
+							Download Microsoft Edge
+						</a>
+						<a
+							href="https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge"
+							style="background-color: white; padding: 6px 12px; border: 1px solid #505050; color: #171717; border-radius: 2px; display: inline-block;"
+						>
+							More info about Internet Explorer and Microsoft Edge
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- site header -->
+			<div
+				id="ms--site-header"
+				data-test-id="site-header-wrapper"
+				itemscope="itemscope"
+				itemtype="http://schema.org/Organization"
+			>
+				<div
+					id="ms--mobile-nav"
+					class="site-header display-none-tablet padding-inline-none gap-none"
+					data-bi-name="mobile-header"
+					data-test-id="mobile-header"
+				></div>
+				<div
+					id="ms--primary-nav"
+					class="site-header display-none display-flex-tablet"
+					data-bi-name="L1-header"
+					data-test-id="primary-header"
+				></div>
+				<div
+					id="ms--secondary-nav"
+					class="site-header display-none display-flex-tablet"
+					data-bi-name="L2-header"
+					data-test-id="secondary-header"
+					
+				></div>
+			</div>
+			
+		<!-- banner -->
+		<div data-banner>
+			<div id="disclaimer-holder"></div>
+			
+		</div>
+		<!-- banner end -->
+	
+		</div>
+	</header>
+				 <section
+					id="layout-body-menu"
+					class="layout-body-menu border-right display-flex background-color-body-medium"
+					data-bi-name="menu"
+			  >
+					
+		<div
+			id="left-container"
+			class="left-container display-none padding-none display-block-tablet width-full display-none-until-layout-restored"
+			data-toc-container="true"
+		>
+			<div
+				id="ms--toc-content"
+				class="padding-left-sm padding-right-none padding-bottom-sm height-full"
+			>
+				<nav
+					id="affixed-left-container"
+					class="margin-top-xxs-tablet position-sticky display-flex flex-direction-column width-full"
+					aria-label="Primary"
+					data-bi-name="left-toc"
+					role="navigation"
+				>
+					<div
+						id="ms--collapsible-toc-header"
+						class="display-flex flex-direction-row-reverse justify-content-center align-items-center margin-bottom-xxs margin-right-xxs"
+					>
+						<button
+							type="button"
+							class="button button-clear button-sm inner-focus"
+							data-collapsible-toc-toggle
+							aria-expanded="true"
+							hidden
+							aria-controls="ms--toc-content"
+							aria-label="Table of contents"
+						>
+							<span class="icon icon-mirrored-rtl" aria-hidden="true">
+								<span
+									class="docon docon-panel-left-contract display-none-layout-menu-collapsed"
+								></span>
+								<span
+									class="docon docon-panel-left-expand display-none display-inline-layout-menu-collapsed"
+								></span>
+							</span>
+						</button>
+						<div
+							id="ms--collapsible-toc-moniker-slot"
+							class="flex-grow-1 display-none-layout-menu-collapsed"
+						></div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	
+			  </section>
+
+				<main
+					id="main"
+					role="main"
+					class="layout-body-main "
+					data-bi-name="content"
+					lang="en-us"
+					dir="ltr"
+				>
+					
+			<div
+		id="ms--content-header"
+		class="content-header default-focus border-bottom-none"
+		data-bi-name="content-header"
+	>
+		<div class="content-header-controls margin-xxs margin-inline-sm-tablet">
+			<button
+				type="button"
+				class="contents-button button button-sm margin-right-xxs"
+				data-bi-name="contents-expand"
+				aria-haspopup="true"
+				data-contents-button
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-menu"></span></span>
+				<span class="contents-expand-title"> Table of contents </span>
+			</button>
+			<button
+				type="button"
+				class="ap-collapse-behavior ap-expanded button button-sm"
+				data-bi-name="ap-collapse"
+				aria-controls="action-panel"
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-exit-mode"></span></span>
+				<span>Exit editor mode</span>
+			</button>
+		</div>
+	</div> 
+		<div
+			id="action-panel"
+			role="region"
+			aria-label="Action Panel"
+			class="action-panel"
+			tabindex="-1"
+		></div>
+	
+			<div
+				data-main-column
+				class="reading-width margin-inline-auto layout-padding padding-top-none padding-top-sm-tablet padding-bottom-sm"
+			>
+				<div>
+					
+		<div id="article-header" class="background-color-body margin-bottom-xs display-none-print">
+			<div class="display-flex align-items-center justify-content-space-between">
+				
+		<details
+			id="article-header-breadcrumbs-overflow-popover"
+			class="popover popover-left"
+			data-for="article-header-breadcrumbs"
+		>
+			<summary
+				class="button button-clear button-primary button-sm inner-focus"
+				aria-label="All breadcrumbs"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-more"></span>
+				</span>
+			</summary>
+			<div id="article-header-breadcrumbs-overflow" class="popover-content"></div>
+		</details>
+
+		<bread-crumbs
+			id="article-header-breadcrumbs"
+			role="group"
+			aria-label="Breadcrumbs"
+			data-test-id="article-header-breadcrumbs"
+			class="overflow-hidden flex-grow-1 margin-right-sm margin-right-md-tablet margin-right-lg-desktop margin-left-negative-xxs padding-left-xxs"
+		></bread-crumbs>
+	 
+		<div
+			id="article-header-page-actions"
+			class="opacity-none margin-left-auto display-flex flex-wrap-no-wrap align-items-stretch"
+		>
+			
+		<button
+			class="button button-sm border-none inner-focus display-none-tablet flex-shrink-0 "
+			data-bi-name="ask-learn-assistant-entry"
+			data-test-id="ask-learn-assistant-modal-entry-mobile"
+			data-ask-learn-modal-entry
+			
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-none display-inline-flex-tablet display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn "
+			data-bi-name="ask-learn-assistant-entry"
+			
+			data-test-id="ask-learn-assistant-modal-entry-tablet"
+			data-ask-learn-modal-entry
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn "
+			data-bi-name="ask-learn-assistant-entry"
+			
+			data-test-id="ask-learn-assistant-flyout-entry"
+			data-ask-learn-flyout-entry
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	 
+
+			<details class="popover popover-right" id="article-header-page-actions-overflow">
+				<summary
+					class="justify-content-flex-start button button-clear button-sm button-primary inner-focus"
+					aria-label="More actions"
+					aria-expanded="false"
+					title="More actions"
+				>
+					<span class="icon" aria-hidden="true">
+						<span class="docon docon-more-vertical"></span>
+					</span>
+				</summary>
+				<div class="popover-content">
+					
+		<button
+			type="button"
+			id="ms--focus-mode-button"
+			data-focus-mode
+			data-bi-name="focus-mode-entry"
+			data-page-action-item="overflow-all"
+			data-popover-close
+			class="button button-clear button-sm button-block justify-content-flex-start text-align-left inner-focus display-none display-inline-flex-tablet"
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-glasses"></span>
+			</span>
+			<span>Reading mode</span>
+		</button>
+	 
+		<button
+			data-page-action-item="overflow-mobile"
+			type="button"
+			class="display-block-layout-menu-collapsed button-block button-sm inner-focus button button-clear display-none-tablet justify-content-flex-start text-align-left"
+			data-bi-name="contents-expand"
+			data-contents-button
+			data-popover-close
+		>
+			<span class="icon" aria-hidden="true"
+				><span class="docon docon-editor-list-bullet"></span
+			></span>
+			<span class="contents-expand-title">Table of contents</span>
+		</button>
+	 
+		<a
+			id="lang-link-overflow"
+			class="button-sm inner-focus button button-clear button-block justify-content-flex-start text-align-left"
+			data-bi-name="language-toggle"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-read-in-link
+			href="#"
+			hidden
+		>
+			<span class="icon" aria-hidden="true" data-read-in-link-icon>
+				<span class="docon docon-locale-globe"></span>
+			</span>
+			<span data-read-in-link-text>Read in English</span>
+		</a>
+	
+					
+		<button
+			type="button"
+			class="collection button button-clear button-sm button-block justify-content-flex-start text-align-left inner-focus"
+			data-list-type="collection"
+			data-bi-name="collection"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-popover-close
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-circle-addition"></span>
+			</span>
+			<span class="collection-status">Add</span>
+		</button>
+	 
+		<button
+			type="button"
+			class="collection button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+			data-list-type="plan"
+			data-bi-name="plan"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-popover-close
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-circle-addition"></span>
+			</span>
+			<span class="plan-status">Add to Plans</span>
+		</button>
+	 
+					
+		<a
+			data-contenteditbtn
+			class="button button-clear button-block button-sm inner-focus justify-content-flex-start text-align-left text-decoration-none"
+			data-bi-name="edit"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			hidden
+			href="https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/search/search-features-list.md"
+			data-original_content_git_url="https://github.com/MicrosoftDocs/azure-ai-docs-pr/blob/live/articles/search/search-features-list.md"
+			data-original_content_git_url_template="{repo}/blob/{branch}/articles/search/search-features-list.md"
+			data-pr_repo=""
+			data-pr_branch=""
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-edit-outline"></span>
+			</span>
+			<span>Edit</span>
+		</a>
+	  
+		<hr class="margin-block-xxs" />
+		
+				<button
+					class="button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+					type="button"
+					data-bi-name="copy-markdown"
+					data-page-action-item="overflow-all"
+					data-copy-markdown
+					data-copy-state="idle"
+					data-check-hidden="true"
+				>
+					<span class="icon color-primary" aria-hidden="true">
+						<span data-show-when="idle" class="docon docon-code-lang"></span>
+						<span data-show-when="loading" class="loader" hidden></span>
+						<span data-show-when="success" class="docon docon-check-mark" hidden></span>
+					</span>
+					<span>Copy Markdown</span>
+				</button>
+		   
+				<button
+					class="button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+					type="button"
+					data-bi-name="print"
+					data-page-action-item="overflow-all"
+					data-popover-close
+					data-print-page
+					data-check-hidden="true"
+				>
+					<span class="icon color-primary" aria-hidden="true">
+						<span class="docon docon-print"></span>
+					</span>
+					<span>Print</span>
+				</button>
+		  
+	
+				</div>
+			</details>
+		</div>
+	
+			</div>
+		</div>
+	  
+		<!-- privateUnauthorizedTemplate is hidden by default -->
+		<div unauthorized-private-section data-bi-name="permission-content-unauthorized-private" hidden>
+			<hr class="hr margin-top-xs margin-bottom-sm" />
+			<div class="notification notification-info">
+				<div class="notification-content">
+					<p class="margin-top-none notification-title">
+						<span class="icon" aria-hidden="true"
+							><span class="docon docon-exclamation-circle-solid"></span
+						></span>
+						<span>Note</span>
+					</p>
+					<p class="margin-top-none authentication-determined not-authenticated">
+						Access to this page requires authorization. You can try <a class="docs-sign-in" href="#" data-bi-name="permission-content-sign-in">signing in</a> or <a  class="docs-change-directory" data-bi-name="permisson-content-change-directory">changing directories</a>.
+					</p>
+					<p class="margin-top-none authentication-determined authenticated">
+						Access to this page requires authorization. You can try <a class="docs-change-directory" data-bi-name="permisson-content-change-directory">changing directories</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+	
+					<div class="content"><h1 id="features-of-azure-ai-search">Features of Azure AI Search</h1></div>
+					
+		<div
+			id="article-metadata"
+			data-bi-name="article-metadata"
+			data-test-id="article-metadata"
+			class="page-metadata-container display-flex gap-xxs justify-content-space-between align-items-center flex-wrap-wrap"
+		>
+			 
+				<div
+					id="user-feedback"
+					class="margin-block-xxs display-none display-none-print"
+					hidden
+					data-hide-on-archived
+				>
+					
+		<button
+			id="user-feedback-button"
+			data-test-id="conceptual-feedback-button"
+			class="button button-sm button-clear button-primary display-none"
+			type="button"
+			data-bi-name="user-feedback-button"
+			data-user-feedback-button
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-like"></span>
+			</span>
+			<span>Feedback</span>
+		</button>
+	
+				</div>
+		  
+		</div>
+	 
+		<div data-id="ai-summary" class="display-none-print">
+			<div id="ms--ai-summary-cta" class="margin-top-xs display-flex align-items-center">
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-sparkle-fill gradient-text-vivid"></span>
+				</span>
+				<button
+					id="ms--ai-summary"
+					type="button"
+					class="tag tag-sm tag-suggestion margin-left-xxs"
+					data-test-id="ai-summary-cta"
+					data-bi-name="ai-summary-cta"
+					data-an="ai-summary"
+				>
+					<span class="ai-summary-cta-text">
+						Summarize this article for me
+					</span>
+				</button>
+			</div>
+			<!-- Slot where the client will render the summary card after the user clicks the CTA -->
+			<div id="ms--ai-summary-header" class="margin-top-xs"></div>
+		</div>
+	 
+		<nav
+			id="center-doc-outline"
+			class="doc-outline display-none-desktop display-none-print margin-bottom-sm"
+			data-bi-name="intopic toc"
+			aria-label="In this article"
+		>
+			<h2 id="ms--in-this-article" class="title is-6 margin-block-xs">
+				In this article
+			</h2>
+		</nav>
+	 <div class="content"><div class="NOTE">
+<p>Note</p>
+<p>Azure AI Search is available through the <a href="https://portal.azure.com" data-linktype="external">Azure portal</a>, <a href="/en-us/azure/search/search-api-versions#rest-apis" data-linktype="absolute-path">REST APIs</a>, and <a href="/en-us/azure/search/search-api-versions#all-azure-sdks" data-linktype="absolute-path">Azure SDKs</a>. It also underpins <a href="/en-us/azure/foundry/agents/concepts/what-is-foundry-iq" data-linktype="absolute-path">Foundry IQ</a>, the managed knowledge layer that transforms enterprise content into reusable, permission-aware knowledge bases for agents in the <a href="https://ai.azure.com/?cid=learnDocs" data-linktype="external">Microsoft Foundry portal</a>.</p>
+</div>
+<p>Azure AI Search provides information retrieval and uses optional AI integration to extract more value from text and vector content.</p>
+<p>The following table summarizes features by category. There's feature parity in all Azure public, private, and sovereign clouds, but some features aren't supported in <a href="search-region-support" data-linktype="relative-path">specific regions</a> or <a href="search-sku-tier#feature-availability-by-tier" data-linktype="relative-path">specific tiers</a>.</p>
+<h2 id="agentic-retrieval">Agentic retrieval</h2>
+<table>
+<thead>
+<tr>
+<th>Category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th>Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Knowledge bases</td>
+<td><a href="agentic-retrieval-how-to-create-knowledge-base" data-linktype="relative-path"><strong>Knowledge bases</strong></a> orchestrate the agentic retrieval pipeline, connecting to your LLM and managing query parameters. A knowledge base references one or more knowledge sources and defines the retrieval behavior.</td>
+</tr>
+<tr>
+<td>Knowledge sources</td>
+<td><a href="agentic-knowledge-source-overview" data-linktype="relative-path"><strong>Knowledge sources</strong></a> define the content available to a knowledge base. An indexed knowledge source is backed by a search index, while a remote knowledge source retrieves content from an external platform at query time.</td>
+</tr>
+<tr>
+<td>Query planning (preview)</td>
+<td>Query planning uses an LLM to analyze conversation context and break down complex questions into focused subqueries. This includes chat history processing, query decomposition, synonym expansion, and spelling correction.</td>
+</tr>
+<tr>
+<td>Parallel query execution</td>
+<td>Subqueries run simultaneously across all knowledge sources. Each subquery supports keyword, vector, and hybrid search with automatic semantic reranking.</td>
+</tr>
+<tr>
+<td>Retrieval reasoning effort (preview)</td>
+<td><a href="agentic-retrieval-how-to-set-retrieval-reasoning-effort" data-linktype="relative-path"><strong>Retrieval reasoning effort</strong></a> controls the level of LLM processing in the pipeline so that you can balance retrieval depth and relevance against latency and LLM cost.</td>
+</tr>
+<tr>
+<td>Response output</td>
+<td>The pipeline returns either extractive grounding content or, with answer synthesis (preview) enabled, an LLM-generated answer with citations. You can optionally include source references and execution details.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="indexing-and-data-extraction">Indexing and data extraction</h2>
+<table>
+<thead>
+<tr>
+<th>Category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th>Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data sources</td>
+<td>Search indexes can accept text from any source, provided it's submitted as a JSON document. <br><br> <a href="search-indexer-overview" data-linktype="relative-path"><strong>Indexers</strong></a> are a feature that automates data import from supported data sources to extract searchable content in primary data stores. Indexers handle JSON serialization for you and most support some form of change and deletion detection. You can connect to a <a href="search-data-sources-gallery" data-linktype="relative-path">variety of data sources</a>, including <a href="search-how-to-index-onelake-files" data-linktype="relative-path">Microsoft OneLake</a>, <a href="search-how-to-index-sql-database" data-linktype="relative-path">Azure SQL Database</a>, <a href="search-how-to-index-cosmosdb-sql" data-linktype="relative-path">Azure Cosmos DB</a>, or <a href="search-how-to-index-azure-blob-storage" data-linktype="relative-path">Azure Blob Storage</a>.  <br><br><a href="search-how-to-index-logic-apps" data-linktype="relative-path"><strong>Logic Apps connectors</strong></a> give you access to a broader range of data sources, including data on other cloud platforms. This indexing and enrichment pipeline is created in Azure AI Search but managed in Azure Logic Apps. <br><br><a href="agentic-knowledge-source-overview" data-linktype="relative-path"><strong>Knowledge sources</strong></a> are a feature of agentic retrieval. They're used during indexing and at query time to support a <a href="agentic-retrieval-how-to-create-knowledge-base" data-linktype="relative-path">knowledge base</a>.</td>
+</tr>
+<tr>
+<td>Hierarchical and nested data structures</td>
+<td><a href="search-howto-complex-data-types" data-linktype="relative-path"><strong>Complex types</strong></a> and collections allow you to model virtually any type of JSON structure within a search index. One-to-many and many-to-many cardinality can be expressed natively through collections, complex types, and collections of complex types.</td>
+</tr>
+<tr>
+<td>Linguistic analysis</td>
+<td>Analyzers are components of classic search used for text processing during indexing and search operations. By default, you can use the general-purpose Standard Lucene analyzer, or override the default with a language analyzer, a custom analyzer that you configure, or another predefined analyzer that produces tokens in the format you require. <br><br><a href="index-add-language-analyzers" data-linktype="relative-path"><strong>Language analyzers</strong></a> from Lucene or Microsoft are used to intelligently handle language-specific linguistics including verb tenses, gender, irregular plural nouns (for example, 'mouse' vs. 'mice'), word decompounding, word-breaking (for languages with no spaces), and more. <br><br><a href="index-add-custom-analyzers" data-linktype="relative-path"><strong>Custom lexical analyzers</strong></a> are used for complex query forms such as phonetic matching and regular expressions.<br><br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="chat-model-and-agent-integration">Chat model and agent integration</h2>
+<table>
+<thead>
+<tr>
+<th>Category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th>Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chat completion models used during indexing</td>
+<td><a href="cognitive-search-skill-genai-prompt" data-linktype="relative-path"><strong>GenAI prompt skill</strong></a> is a skill that calls a large language model during indexing and provides a prompt that determines the task. You decide what the task is. It might involve describing an image, summarizing or manipulating content, or any task the model can perform. Output is added as a new field in a searchable index.</td>
+</tr>
+<tr>
+<td>Chat completion models used at query time</td>
+<td><a href="agentic-retrieval-overview" data-linktype="relative-path"><strong>Agentic retrieval</strong></a> uses a large language model for query planning, decomposing and paraphrasing complex queries for better query coverage over your index. Responses from agentic retrieval are designed for agent-to-agent workflows. You can pass search results as single large string, which simplifies agent consumption of your proprietary content. The response also includes citations and query execution information. <br><br><a href="agentic-retrieval-how-to-answer-synthesis" data-linktype="relative-path"><strong>Answer synthesis (preview)</strong></a> uses the LLM to generate citation-backed responses from search results returned by agentic retrieval. <br><br><a href="retrieval-augmented-generation-overview" data-linktype="relative-path"><strong>RAG patterns</strong></a> can be implemented using existing capabilities. The ability to <a href="search-relevance-overview" data-linktype="relative-path">tune for relevance</a> and construct hybrid queries improve the quality of the content sent to chat bots for answer generation.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="applied-ai-and-ai-enriched-content">Applied AI and AI enriched content</h2>
+<table>
+<thead>
+<tr>
+<th>Category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th>Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI processing during indexing</td>
+<td><a href="cognitive-search-concept-intro" data-linktype="relative-path"><strong>AI enrichment</strong></a> refers to embedded image and natural language processing in an indexer pipeline that extracts text and information from content that can't otherwise be indexed for full text search. AI processing is achieved by adding and combining skills in a skillset, which is then attached to an indexer. AI can be either <a href="cognitive-search-predefined-skills" data-linktype="relative-path">built-in skills</a> from Microsoft, such as text translation or Optical Character Recognition (OCR), or <a href="cognitive-search-create-custom-skill-example" data-linktype="relative-path">custom skills</a> that you provide. <p></p><a href="vector-search-integrated-vectorization" data-linktype="relative-path"><strong>Integrated data chunking and vectorization</strong></a> splits up larger passages into smaller chunks that can be vectorized, with vectors routed to dedicated fields in an index for vector and hybrid search.</td>
+</tr>
+<tr>
+<td>AI processing during query execution</td>
+<td><a href="vector-search-how-to-configure-vectorizer" data-linktype="relative-path"><strong>Vectorizers</strong></a> are used to encode user query strings into vectors for vector search. You can use the same embedding models for queries that you used for indexing. <p></p></td>
+</tr>
+<tr>
+<td>Storing enriched content for analysis and consumption in non-search scenarios</td>
+<td><a href="knowledge-store-concept-intro" data-linktype="relative-path"><strong>Knowledge store</strong></a> is persistent storage of AI enriched or AI generated content, intended for non-search scenarios like knowledge mining and data science workloads. A knowledge store is defined in a skillset, but created in Azure Storage as objects or tabular rowsets.</td>
+</tr>
+<tr>
+<td>Cached enrichments (preview)</td>
+<td><a href="enrichment-cache-how-to-configure" data-linktype="relative-path"><strong>Enrichment caching</strong></a> refers to cached enrichments that can be reused during skillset execution. Caching is valuable in skillsets that include OCR and image analysis, which are expensive to process.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vector-and-hybrid-retrieval">Vector and hybrid retrieval</h2>
+<table>
+<thead>
+<tr>
+<th>Category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th>Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vector indexing</td>
+<td>Within a search index, add <a href="vector-search-how-to-create-index" data-linktype="relative-path">vector fields</a> to support  <a href="vector-search-overview" data-linktype="relative-path"><strong>vector search</strong></a> scenarios. Vector fields can coexist with nonvector fields in the same search document.</td>
+</tr>
+<tr>
+<td>Vector queries</td>
+<td><a href="vector-search-how-to-query" data-linktype="relative-path">Formulate single and multiple vector queries</a>.</td>
+</tr>
+<tr>
+<td>Vector search algorithms</td>
+<td>Use <a href="vector-search-ranking#about-hnsw" data-linktype="relative-path">Hierarchical Navigable Small World (HNSW)</a> or <a href="vector-search-ranking#about-exhaustive-knn" data-linktype="relative-path">exhaustive K-Nearest Neighbors (KNN)</a> to find similar vectors in a search index.</td>
+</tr>
+<tr>
+<td>Vector filters</td>
+<td><a href="vector-search-filters" data-linktype="relative-path">Apply filters before or after query execution</a> for greater precision during information retrieval.</td>
+</tr>
+<tr>
+<td>Hybrid information retrieval</td>
+<td>Search for concepts and keywords in a single <a href="hybrid-search-how-to-query" data-linktype="relative-path">hybrid query request</a>. <p></p><a href="hybrid-search-overview" data-linktype="relative-path"><strong>Hybrid search</strong></a> consolidates vector and text search, with optional semantic ranking and relevance tuning for best results.</td>
+</tr>
+<tr>
+<td>Integrated data chunking and vectorization</td>
+<td>Native data chunking through <a href="cognitive-search-skill-textsplit" data-linktype="relative-path">Text Split skill</a>. Native vectorization through <a href="vector-search-how-to-configure-vectorizer" data-linktype="relative-path">vectorizers</a> and embedding skills such as <a href="cognitive-search-skill-azure-openai-embedding" data-linktype="relative-path">Azure OpenAI Embedding</a>, <a href="cognitive-search-skill-vision-vectorize" data-linktype="relative-path">Azure Vision multimodal (preview)</a>, and <a href="cognitive-search-aml-skill" data-linktype="relative-path">AML</a> that you can use to connect to endpoints in the Microsoft Foundry model catalog. <p></p><a href="vector-search-integrated-vectorization" data-linktype="relative-path"><strong>Integrated vectorization</strong></a> provides an end-to-end indexing pipeline from source files to queries.</td>
+</tr>
+<tr>
+<td>Integrated vector compression and quantization</td>
+<td>Use <a href="vector-search-how-to-quantization" data-linktype="relative-path">built-in scalar and binary quantization</a> to reduce vector index size in memory and on disk. You can also forego storage of vectors you don't need, or assign narrow data types to vector fields for reduced storage requirements.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="classic-full-text-and-other-query-forms">Classic full text and other query forms</h2>
+<table>
+<thead>
+<tr>
+<th>Category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th>Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Free-form text search</td>
+<td><a href="search-lucene-query-architecture" data-linktype="relative-path"><strong>Full-text search</strong></a> is a primary use case for most search-based apps. Queries can be formulated using a supported syntax. <br><br><a href="query-simple-syntax" data-linktype="relative-path"><strong>Simple query syntax</strong></a> provides logical operators, phrase search operators, suffix operators, precedence operators. <br><br><a href="query-lucene-syntax" data-linktype="relative-path"><strong>Full Lucene query syntax</strong></a> includes all operations in simple syntax, with extensions for fuzzy search, proximity search, term boosting, and regular expressions.</td>
+</tr>
+<tr>
+<td>Relevance</td>
+<td><a href="index-add-scoring-profiles" data-linktype="relative-path"><strong>Simple scoring</strong></a> is a key benefit of Azure AI Search. Use scoring profiles to model relevance as a function of values in the documents themselves. For example, you might want newer products or discounted products to appear higher in the search results. You can also build scoring profiles by using tags for personalized scoring based on customer search preferences you track and store separately. <br><br><a href="semantic-search-overview" data-linktype="relative-path"><strong>Semantic ranker</strong></a> is a premium feature that reranks results based on semantic relevance to the query. Depending on your content and scenario, it can significantly improve search relevance with minimal configuration or effort.</td>
+</tr>
+<tr>
+<td>Geospatial search</td>
+<td><a href="search-query-odata-geo-spatial-functions" data-linktype="relative-path"><strong>Geospatial functions</strong></a> filter over and match on geographic coordinates. You can <a href="search-query-simple-examples#example-6-geospatial-search" data-linktype="relative-path">match on distance</a> or by inclusion in a polygon shape.</td>
+</tr>
+<tr>
+<td>Filters and facets</td>
+<td><a href="search-faceted-navigation" data-linktype="relative-path"><strong>Faceted navigation</strong></a> is enabled through a single query parameter. Azure AI Search returns a faceted navigation structure you can use as the code behind a categories list, for self-directed filtering (for example, to filter catalog items by price-range or brand). <br><br> <a href="query-odata-filter-orderby-syntax" data-linktype="relative-path"><strong>Filters</strong></a> can be used to incorporate faceted navigation into your application's UI, enhance query formulation, and filter based on user- or developer-specified criteria. Create filters using the OData syntax.</td>
+</tr>
+<tr>
+<td>User experience</td>
+<td><a href="search-add-autocomplete-suggestions" data-linktype="relative-path"><strong>Autocomplete</strong></a> can be enabled for type-ahead queries in a search bar. <br><br><a href="/en-us/rest/api/searchservice/suggesters" data-linktype="absolute-path"><strong>Search suggestions</strong></a> also works off of partial text inputs in a search bar, but the results are actual documents in your index rather than query terms. <br><br><a href="search-synonyms" data-linktype="relative-path"><strong>Synonyms</strong></a> associates equivalent terms that implicitly expand the scope of a query, without the user having to provide the alternate terms. <br><br><a href="/en-us/rest/api/searchservice/documents/search-post" data-linktype="absolute-path"><strong>Hit highlighting</strong></a> applies text formatting to a matching keyword in search results. You can choose which fields return highlighted snippets.<br><br><a href="/en-us/rest/api/searchservice/documents/search-post" data-linktype="absolute-path"><strong>Sorting</strong></a> is offered for multiple fields via the index schema and then toggled at query-time with a single search parameter.<br><br> <a href="search-pagination-page-layout" data-linktype="relative-path"><strong>Paging</strong></a> and throttling your search results is straightforward with the finely tuned control that Azure AI Search offers over your search results.  <br><br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="security-features">Security features</h2>
+<table>
+<thead>
+<tr>
+<th>Category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th>Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Network security</td>
+<td><a href="service-configure-firewall" data-linktype="relative-path"><strong>IP rules for inbound firewall support</strong></a> allows you to set up IP ranges over which the search service accepts requests. <br><br><a href="service-create-private-endpoint" data-linktype="relative-path"><strong>Create a private endpoint</strong></a> using Azure Private Link to force all requests through a virtual network. <br><br><a href="search-security-network-security-perimeter" data-linktype="relative-path"><strong>Network security perimeter</strong></a> support allows you to join Azure AI Search to a network security perimeter that includes other Azure resources so that you can manage network access holistically.</td>
+</tr>
+<tr>
+<td>Data encryption</td>
+<td><a href="search-security-built-in#data-encryption" data-linktype="relative-path"><strong>Microsoft-managed encryption-at-rest</strong></a> is built into the internal storage layer and is irrevocable. <br><br><a href="search-security-manage-encryption-keys" data-linktype="relative-path"><strong>Customer-managed encryption keys (CMK)</strong></a> that you create and manage in Azure Key Vault can be used for supplemental encryption of indexes and synonym maps. For services created after August 1 2020, CMK encryption extends to data on temporary disks, for full double encryption of indexed content.</td>
+</tr>
+<tr>
+<td>Inbound access</td>
+<td><a href="search-security-rbac" data-linktype="relative-path"><strong>Role-based access control</strong></a> assigns roles to users and groups in Microsoft Entra ID for controlled access to search content and operations. You can also use <a href="search-security-api-keys" data-linktype="relative-path"><strong>key-based authentication</strong></a> if you don't want to use role assignments. <br><br><a href="search-document-level-access-overview" data-linktype="relative-path"><strong>Document-level access control</strong></a> filters out search results that a user isn't authorized to see. For several data sources, if the data source provides an access control model, you can configure an index to inherit the user permission metadata.</td>
+</tr>
+<tr>
+<td>Outbound security (indexers)</td>
+<td><a href="search-indexer-howto-access-private" data-linktype="relative-path"><strong>Data connections through private endpoints</strong></a> allows an indexer to connect to Azure resources that are protected through Azure Private Link. <br><br><a href="search-how-to-managed-identities" data-linktype="relative-path"><strong>Data connections through managed identities</strong></a> authenticates connections to Azure resources using a Microsoft Entra security principal, which eliminates storage and passing of hardcoded API keys.<br><br><a href="search-how-to-managed-identities" data-linktype="relative-path"><strong>Data access using a trusted identity</strong></a> means that connection strings to external data sources can omit user names and passwords. When an indexer connects to the data source, the resource allows the connection if the search service was previously registered as a trusted service (applies to Azure Storage only).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="portal-features">Portal features</h2>
+<table>
+<thead>
+<tr>
+<th>Category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th>Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tools for prototyping and inspection</td>
+<td><a href="search-what-is-an-index" data-linktype="relative-path"><strong>Add index</strong></a> is an index designer in the Azure portal that you can use to create a basic schema consisting of attributed fields and a few other settings. After saving the index, you can populate it using an SDK or the REST API to provide the data. <br><br><a href="search-import-data-portal" data-linktype="relative-path"><strong>Import data</strong></a> is a wizard that builds an end-to-end indexing pipeline, including an index, indexer, skillset, and data source definition, for keyword search and RAG scenarios. For RAG, it also handles data chunking and vectorization. If your data exists in Azure, this wizard can save you significant time and effort, especially for proof-of-concept investigation and exploration. <br><br><a href="search-explorer" data-linktype="relative-path"><strong>Search explorer</strong></a> is used to test queries and refine scoring profiles.<br><br><a href="search-create-app-portal" data-linktype="relative-path"><strong>Create demo app</strong></a> is used to generate an HTML page that can be used to test the search experience.  <br><br><a href="cognitive-search-debug-session" data-linktype="relative-path"><strong>Debug Sessions</strong></a> is a visual editor that lets you debug a skillset interactively. It shows you dependencies, output, and transformations.</td>
+</tr>
+<tr>
+<td>Monitoring and diagnostics</td>
+<td><a href="monitor-azure-cognitive-search" data-linktype="relative-path"><strong>Enable monitoring features</strong></a> to go beyond the metrics-at-a-glance that are always visible in the Azure portal. Metrics on queries per second, latency, and throttling are captured and reported in portal pages with no extra configuration required.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="programmability">Programmability</h2>
+<table>
+<thead>
+<tr>
+<th>Category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th>Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>REST</td>
+<td><a href="/en-us/rest/api/searchservice/" data-linktype="absolute-path"><strong>Service REST API</strong></a> is for data plane operations, including all operations related to indexing, queries, AI enrichment, and agentic retrieval. You can also use this client library to retrieve system information and statistics. <br><br><a href="/en-us/rest/api/searchmanagement/" data-linktype="absolute-path"><strong>Management REST API</strong></a> is for service creation and provisioning through Azure Resource Manager. You can also use this API to manage keys and capacity.</td>
+</tr>
+<tr>
+<td>Azure SDK for .NET</td>
+<td><a href="/en-us/dotnet/api/overview/azure/search.documents-readme" data-linktype="absolute-path"><strong>Azure.Search.Documents</strong></a> is for data plane operations, including all operations related to indexing, queries, and AI enrichment. You can also use this client library to retrieve system information and statistics. <br><br><a href="/en-us/dotnet/api/microsoft.azure.management.search" data-linktype="absolute-path"><strong>Microsoft.Azure.Management.Search</strong></a> is for service creation and provisioning through Azure Resource Manager. You can also use this API to manage keys and capacity.</td>
+</tr>
+<tr>
+<td>Azure SDK for Java</td>
+<td><a href="/en-us/java/api/com.azure.search.documents" data-linktype="absolute-path"><strong>com.azure.search.documents</strong></a> is for data plane operations, including all operations related to indexing, queries, and AI enrichment. You can also use this client library to retrieve system information and statistics. <br><br><a href="/en-us/java/api/overview/azure/search/management" data-linktype="absolute-path"><strong>com.microsoft.azure.management.search</strong></a> is for service creation and provisioning through Azure Resource Manager. You can also use this API to manage keys and capacity.</td>
+</tr>
+<tr>
+<td>Azure SDK for Python</td>
+<td><a href="/en-us/python/api/overview/azure/search-documents-readme" data-linktype="absolute-path"><strong>azure-search-documents</strong></a> is for data plane operations, including all operations related to indexing, queries, and AI enrichment. You can also use this client library to retrieve system information and statistics. <br><br><a href="/en-us/python/api/azure-mgmt-search/" data-linktype="absolute-path"><strong>azure-mgmt-search</strong></a> is for service creation and provisioning through Azure Resource Manager. You can also use this API to manage keys and capacity.</td>
+</tr>
+<tr>
+<td>Azure SDK for JavaScript/TypeScript</td>
+<td><a href="/en-us/javascript/api/@azure/search-documents/" data-linktype="absolute-path"><strong>azure/search-documents</strong></a> is for data plane operations, including all operations related to indexing, queries, and AI enrichment. You can also use this client library to retrieve system information and statistics. <br><br><a href="/en-us/javascript/api/@azure/arm-search/" data-linktype="absolute-path"><strong>azure/arm-search</strong></a> is for service creation and provisioning through Azure Resource Manager. You can also use this API to manage keys and capacity.</td>
+</tr>
+</tbody>
+</table>
+</div>
+					
+		<div
+			id="ms--inline-notifications"
+			class="margin-block-xs"
+			data-bi-name="inline-notification"
+		></div>
+	 
+		<div
+			id="assertive-live-region"
+			role="alert"
+			aria-live="assertive"
+			class="visually-hidden"
+			aria-relevant="additions"
+			aria-atomic="true"
+		></div>
+		<div
+			id="polite-live-region"
+			role="status"
+			aria-live="polite"
+			class="visually-hidden"
+			aria-relevant="additions"
+			aria-atomic="true"
+		></div>
+	
+					
+		<!-- feedback section -->
+		<section
+			id="site-user-feedback-footer"
+			class="font-size-sm margin-top-md display-none-print display-none-desktop"
+			data-test-id="site-user-feedback-footer"
+			data-bi-name="site-feedback-section"
+		>
+			<hr class="hr" />
+			<h2 id="ms--feedback" class="title is-3">Feedback</h2>
+			<div class="display-flex flex-wrap-wrap align-items-center">
+				<p class="font-weight-semibold margin-xxs margin-left-none">
+					Was this page helpful?
+				</p>
+				<div class="buttons">
+					<button
+						class="thumb-rating-button like button button-primary button-sm"
+						data-test-id="footer-rating-yes"
+						data-binary-rating-response="rating-yes"
+						type="button"
+						title="This article is helpful"
+						data-bi-name="button-rating-yes"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-like"></span>
+						</span>
+						<span>Yes</span>
+					</button>
+					<button
+						class="thumb-rating-button dislike button button-primary button-sm"
+						id="standard-rating-no-button"
+						hidden
+						data-test-id="footer-rating-no"
+						data-binary-rating-response="rating-no"
+						type="button"
+						title="This article is not helpful"
+						data-bi-name="button-rating-no"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-dislike"></span>
+						</span>
+						<span>No</span>
+					</button>
+					<details
+						class="popover popover-top"
+						id="mobile-help-popover"
+						data-test-id="footer-feedback-popover"
+					>
+						<summary
+							class="thumb-rating-button dislike button button-primary button-sm"
+							data-test-id="details-footer-rating-no"
+							data-binary-rating-response="rating-no"
+							title="This article is not helpful"
+							data-bi-name="button-rating-no"
+							aria-pressed="false"
+							data-bi-an="feedback-unhelpful-popover"
+						>
+							<span class="icon" aria-hidden="true">
+								<span class="docon docon-dislike"></span>
+							</span>
+							<span>No</span>
+						</summary>
+						<div
+							class="popover-content width-200 width-300-tablet"
+							role="dialog"
+							aria-labelledby="popover-heading"
+							aria-describedby="popover-description"
+						>
+							<p id="popover-heading" class="font-size-lg margin-bottom-xxs font-weight-semibold">
+								Need help with this topic?
+							</p>
+							<p id="popover-description" class="font-size-sm margin-bottom-xs">
+								Want to try using Ask Learn to clarify or guide you through this topic?
+							</p>
+							
+		<div class="buttons flex-direction-row flex-wrap justify-content-center gap-xxs">
+			<div>
+		<button
+			class="button button-sm border inner-focus display-none margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-test-id="ask-learn-assistant-modal-entry-mobile-feedback"
+			data-ask-learn-modal-entry-feedback
+			data-bi-an=feedback-unhelpful-popover
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-inline-flex display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-modal-entry-tablet-feedback"
+			data-ask-learn-modal-entry-feedback
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-flyout-entry-feedback"
+			data-ask-learn-flyout-entry-show-only
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	</div>
+			<button
+				type="button"
+				class="button button-sm margin-right-xxs"
+				data-help-option="suggest-fix"
+				data-bi-name="feedback-suggest"
+				data-bi-an="feedback-unhelpful-popover"
+				data-test-id="suggest-fix"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-feedback"></span>
+				</span>
+				<span> Suggest a fix? </span>
+			</button>
+		</div>
+	
+						</div>
+					</details>
+				</div>
+			</div>
+		</section>
+		<!-- end feedback section -->
+	
+				</div>
+				
+		<div id="ms--additional-resources-mobile" class="display-none-print">
+			<hr class="hr" hidden />
+			<h2 id="ms--additional-resources-mobile-heading" class="title is-3" hidden>
+				Additional resources
+			</h2>
+			
+		<section
+			id="right-rail-recommendations-mobile"
+			class=""
+			data-bi-name="recommendations"
+			hidden
+		></section>
+	 
+		<section
+			id="right-rail-training-mobile"
+			class=""
+			data-bi-name="learning-resource-card"
+			hidden
+		></section>
+	 
+		<section
+			id="right-rail-events-mobile"
+			class=""
+			data-bi-name="events-card"
+			hidden
+		></section>
+	
+		</div>
+	 
+		<div
+			id="article-metadata-footer"
+			data-bi-name="article-metadata-footer"
+			data-test-id="article-metadata-footer"
+			class="page-metadata-container"
+		>
+			<hr class="hr" />
+			<ul class="metadata page-metadata" data-bi-name="page info" lang="en-us" dir="ltr">
+				<li class="visibility-hidden-visual-diff">
+			<span class="badge badge-sm text-wrap-pretty">
+				<span>Last updated on <local-time format="twoDigitNumeric"
+		datetime="2026-08-05T08:00:00.000Z"
+		data-article-date-source="calculated"
+		class="is-invisible"
+	>
+		2026-08-05
+	</local-time></span>
+			</span>
+		</li>
+			</ul>
+		</div>
+	
+			</div>
+		
+				</main>
+				<aside
+					id="layout-body-aside"
+					class="layout-body-aside  "
+					data-bi-name="aside"
+					aria-label="Additional resources"
+			  >
+					
+		<div
+			id="ms--additional-resources"
+			class="right-container padding-sm display-none display-block-desktop height-full"
+			data-bi-name="pageactions"
+		>
+			<div id="affixed-right-container" data-bi-name="right-column">
+				
+		<nav
+			id="side-doc-outline"
+			class="doc-outline border-bottom padding-bottom-xs margin-bottom-xs scrollbar-width-thin"
+			data-bi-name="intopic toc"
+			aria-label="In this article"
+		>
+			<h3>In this article</h3>
+		</nav>
+	
+				<!-- Feedback -->
+				
+		<section
+			id="ms--site-user-feedback-right-rail"
+			class="font-size-sm display-none-print"
+			data-test-id="site-user-feedback-right-rail"
+			data-bi-name="site-feedback-right-rail"
+		>
+			<div class="display-flex flex-wrap-wrap align-items-center">
+				<p class="font-weight-semibold margin-xxs margin-left-none">
+					Was this page helpful?
+				</p>
+				<div class="display-flex flex-wrap-nowrap">
+					<button
+						class="thumb-rating-button like inner-focus"
+						data-test-id="right-rail-rating-yes"
+						data-binary-rating-response="rating-yes"
+						type="button"
+						title="This article is helpful"
+						aria-label="This article is helpful"
+						data-bi-name="button-rating-yes"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-like"></span>
+						</span>
+					</button>
+					<button
+						class="thumb-rating-button dislike inner-focus"
+						id="right-rail-no-button"
+						hidden
+						data-test-id="right-rail-rating-no"
+						data-binary-rating-response="rating-no"
+						type="button"
+						title="This article is not helpful"
+						aria-label="This article is not helpful"
+						data-bi-name="button-rating-no"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-dislike"></span>
+						</span>
+					</button>
+					<details class="popover popover-right" id="help-popover" data-test-id="feedback-popover">
+						<summary
+							tabindex="0"
+							class="thumb-rating-button dislike inner-focus"
+							data-test-id="details-right-rail-rating-no"
+							data-binary-rating-response="rating-no"
+							title="This article is not helpful"
+							aria-label="This article is not helpful"
+							data-bi-name="button-rating-no"
+							aria-pressed="false"
+							data-bi-an="feedback-unhelpful-popover"
+						>
+							<span class="icon" aria-hidden="true">
+								<span class="docon docon-dislike"></span>
+							</span>
+						</summary>
+						<div
+							class="popover-content width-200 width-300-tablet"
+							role="dialog"
+							aria-labelledby="popover-heading-right-rail"
+							aria-describedby="popover-description-right-rail"
+						>
+							<p
+								id="popover-heading-right-rail"
+								class="font-size-lg margin-bottom-xxs font-weight-semibold"
+							>
+								Need help with this topic?
+							</p>
+							<p id="popover-description-right-rail" class="font-size-sm margin-bottom-xs">
+								Want to try using Ask Learn to clarify or guide you through this topic?
+							</p>
+							
+		<div class="buttons flex-direction-row flex-wrap justify-content-center gap-xxs">
+			<div>
+		<button
+			class="button button-sm border inner-focus display-none margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-test-id="ask-learn-assistant-modal-entry-mobile-feedback"
+			data-ask-learn-modal-entry-feedback
+			data-bi-an=feedback-unhelpful-popover
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-inline-flex display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-modal-entry-tablet-feedback"
+			data-ask-learn-modal-entry-feedback
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-flyout-entry-feedback"
+			data-ask-learn-flyout-entry-show-only
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	</div>
+			<button
+				type="button"
+				class="button button-sm margin-right-xxs"
+				data-help-option="suggest-fix"
+				data-bi-name="feedback-suggest"
+				data-bi-an="feedback-unhelpful-popover"
+				data-test-id="suggest-fix"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-feedback"></span>
+				</span>
+				<span> Suggest a fix? </span>
+			</button>
+		</div>
+	
+						</div>
+					</details>
+				</div>
+			</div>
+		</section>
+	
+			</div>
+		</div>
+	
+			  </aside> <section
+					id="layout-body-flyout"
+					class="layout-body-flyout "
+					data-bi-name="flyout"
+			  >
+					 <div
+	class="height-full border-left background-color-body-medium"
+	id="ask-learn-flyout"
+></div>
+			  </section> <div class="layout-body-footer " data-bi-name="layout-footer">
+		<footer
+			id="footer"
+			data-test-id="footer"
+			data-bi-name="footer"
+			class="footer-layout padding-xs padding-sm-desktop has-default-focus border-top"
+			role="contentinfo"
+		>
+			<div class="display-flex gap-xs flex-wrap-wrap is-full-height padding-right-lg-desktop">
+				
+		<a
+			data-mscc-ic="false"
+			href="#"
+			data-bi-name="select-locale"
+			class="locale-selector-link flex-shrink-0 button button-sm button-clear external-link-indicator"
+			id=""
+			title=""
+			><span class="icon" aria-hidden="true"
+				><span class="docon docon-world"></span></span
+			><span class="local-selector-link-text">en-us</span></a
+		>
+	 <div class="ccpa-privacy-link" data-ccpa-privacy-link hidden>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://aka.ms/yourcaliforniaprivacychoices"
+			data-bi-name="your-privacy-choices"
+			class="button button-sm button-clear flex-shrink-0 external-link-indicator"
+			id=""
+			title=""
+			>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 30 14"
+			xml:space="preserve"
+			height="16"
+			width="43"
+			aria-hidden="true"
+			focusable="false"
+		>
+			<path
+				d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z"
+				style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"
+			></path>
+			<path
+				d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z"
+				style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"
+			></path>
+			<path
+				d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z"
+				style="fill:#fff"
+			></path>
+			<path
+				d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z"
+				style="fill:#06f"
+			></path>
+		</svg>
+	
+			<span>Your Privacy Choices</span></a
+		>
+	
+	</div>
+				<div class="flex-shrink-0">
+		<div class="dropdown has-caret-up">
+			<button
+				data-test-id="theme-selector-button"
+				class="dropdown-trigger button button-clear button-sm inner-focus theme-dropdown-trigger"
+				aria-controls="{{ themeMenuId }}"
+				aria-haspopup="true"
+				aria-expanded="false"
+				data-bi-name="theme"
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-sun"></span></span>
+				<span>Theme</span>
+				<span class="icon expanded-indicator" aria-hidden="true">
+					<span class="docon docon-chevron-down-light"></span>
+				</span>
+			</button>
+			<div class="dropdown-menu" id="{{ themeMenuId }}" role="menu">
+				<ul class="theme-selector padding-xxs" data-test-id="theme-dropdown-menu" role="none">
+					<li class="theme display-block" role="none">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							role="menuitemradio"
+							aria-checked="false"
+							data-theme-to="light"
+							tabindex="-1"
+						>
+							<span class="theme-light margin-right-xxs">
+								<span
+									class="theme-selector-icon border display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span> Light </span>
+						</button>
+					</li>
+					<li class="theme display-block" role="none">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							role="menuitemradio"
+							aria-checked="false"
+							data-theme-to="dark"
+							tabindex="-1"
+						>
+							<span class="theme-dark margin-right-xxs">
+								<span
+									class="border theme-selector-icon display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span> Dark </span>
+						</button>
+					</li>
+					<li class="theme display-block" role="none">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							role="menuitemradio"
+							aria-checked="false"
+							data-theme-to="high-contrast"
+							tabindex="-1"
+						>
+							<span class="theme-high-contrast margin-right-xxs">
+								<span
+									class="border theme-selector-icon display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span> High contrast </span>
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+			</div>
+			<ul class="links" data-bi-name="footerlinks">
+				<li class="manage-cookies-holder" hidden=""></li>
+				<li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/principles-for-ai-generated-content"
+			data-bi-name="aiDisclaimer"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>AI Disclaimer</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/previous-versions/"
+			data-bi-name="archivelink"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Previous Versions</a
+		>
+	
+	</li> <li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog"
+			data-bi-name="bloglink"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Blog</a
+		>
+	
+	</li> <li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/contribute"
+			data-bi-name="contributorGuide"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Contribute</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://go.microsoft.com/fwlink/?LinkId=521839"
+			data-bi-name="privacy"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Privacy</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://go.microsoft.com/fwlink/?linkid=2259814"
+			data-bi-name="consumer-health-privacy"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Consumer Health Privacy</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/legal/termsofuse"
+			data-bi-name="termsofuse"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Terms of Use</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://www.microsoft.com/legal/intellectualproperty/Trademarks/"
+			data-bi-name="trademarks"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Trademarks</a
+		>
+	
+	</li>
+				<li>&copy; Microsoft 2026</li>
+			</ul>
+		</footer>
+	</footer>
+			</body>
+		</html>

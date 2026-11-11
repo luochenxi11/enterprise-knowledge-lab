@@ -1,0 +1,17 @@
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IntelliJ IDEA
+.idea/
+
+# Secrets / environment files
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db

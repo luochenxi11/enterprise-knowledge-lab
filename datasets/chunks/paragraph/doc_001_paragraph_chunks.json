@@ -1,0 +1,102 @@
+{
+  "title": "Introduction to Azure AI Search - Azure AI Search | Microsoft Learn",
+  "strategy": "paragraph",
+  "chunks": [
+    {
+      "text": "Azure AI Search is available through the Azure portal, REST APIs, and Azure SDKs. It also underpins Foundry IQ, the managed knowledge layer that transforms enterprise content into reusable, permission-aware knowledge bases for agents in the Microsoft Foundry portal.",
+      "chunk_id": "doc_001_paragraph_001"
+    },
+    {
+      "text": "Azure AI Search is a fully managed, cloud-hosted service that connects your data to AI. The service unifies access to enterprise and web content so agents and large language models (LLMs) can use context, chat history, and multi-source signals to produce reliable, grounded answers.",
+      "chunk_id": "doc_001_paragraph_002"
+    },
+    {
+      "text": "Common use cases include classic search and retrieval-augmented generation (RAG) using agentic retrieval, where the service orchestrates query planning, retrieval, and response construction. These capabilities support scenarios ranging from traditional search experiences to AI-powered agents and chat applications suitable for both enterprise and consumer scenarios.",
+      "chunk_id": "doc_001_paragraph_003"
+    },
+    {
+      "text": "When you create a search service, the following capabilities are included:",
+      "chunk_id": "doc_001_paragraph_004"
+    },
+    {
+      "text": "Create a search service",
+      "chunk_id": "doc_001_paragraph_005"
+    },
+    {
+      "text": "For more information about specific functionality, see Features of Azure AI Search.",
+      "chunk_id": "doc_001_paragraph_006"
+    },
+    {
+      "text": "Classic search is an index-first retrieval model for predictable, low-latency queries. Each query targets a single, predefined search index and returns ranked documents in one request–response cycle. No LLM-assisted planning, iteration, or synthesis occurs during retrieval.",
+      "chunk_id": "doc_001_paragraph_007"
+    },
+    {
+      "text": "In this architecture, your search service sits between the data stores that contain your unprocessed content and your client app. The app is responsible for sending query requests to your search service and handling the response.",
+      "chunk_id": "doc_001_paragraph_008"
+    },
+    {
+      "text": "This architecture has two primary workloads:",
+      "chunk_id": "doc_001_paragraph_009"
+    },
+    {
+      "text": "Indexing loads content into an index and makes it searchable. Internally, inbound text is tokenized and stored in inverted indexes, while inbound vectors are stored in vector indexes. Azure AI Search can only index JSON documents. You can use the push method to upload JSON documents directly or the pull method (indexer or logic app workflow) to retrieve and serialize data into JSON.",
+      "chunk_id": "doc_001_paragraph_010"
+    },
+    {
+      "text": "During indexing, you can use AI enrichment to chunk text, generate vectors, and apply other transformations that create structure and content. Azure AI Search then serializes the enriched output into JSON documents and ingests them into the index.",
+      "chunk_id": "doc_001_paragraph_011"
+    },
+    {
+      "text": "Querying targets an index populated with searchable content. This step occurs when your client app sends a query request to your search service. In your code, set up a search client to handle requests for full-text queries, vector queries, hybrid queries, multimodal queries, fuzzy search, autocomplete, geo-search, and other query types.",
+      "chunk_id": "doc_001_paragraph_012"
+    },
+    {
+      "text": "This diagram separates the indexing and query engines for clarity, but in Azure AI Search, they're the same component operating in read-write and read-only modes.",
+      "chunk_id": "doc_001_paragraph_013"
+    },
+    {
+      "text": "Agentic retrieval is a multi-query pipeline designed for complex agent-to-agent workflows. Each query targets a knowledge base that represents a complete domain of knowledge. Your agent references the knowledge base for what to ground on, while the knowledge base handles how to perform grounding.",
+      "chunk_id": "doc_001_paragraph_014"
+    },
+    {
+      "text": "A knowledge base consists of one or more knowledge sources, an optional LLM for query planning and answer synthesis, and parameters that govern retrieval behavior. Each query undergoes planning, decomposition into focused subqueries, parallel retrieval from knowledge sources, semantic reranking, and results merging. The three-pronged response is optimized for agent consumption.",
+      "chunk_id": "doc_001_paragraph_015"
+    },
+    {
+      "text": "Under the hood, agentic retrieval builds on the classic search architecture by adding a context layer (knowledge base) that orchestrates multi-source retrieval. Knowledge sources can be indexed or remote: indexed sources use the same indexing and query engines as classic search, while remote sources bypass indexing and are queried live.",
+      "chunk_id": "doc_001_paragraph_016"
+    },
+    {
+      "text": "Classic search and agentic retrieval are complementary modes of information retrieval. Both support full-text, vector, hybrid, and multimodal search. However, they differ in how content is ingested and queried. The following table summarizes their key differences.",
+      "chunk_id": "doc_001_paragraph_017"
+    },
+    {
+      "text": "You can access Azure AI Search through the Azure portal, REST APIs, and Azure SDKs for .NET, Java, JavaScript, and Python.",
+      "chunk_id": "doc_001_paragraph_018"
+    },
+    {
+      "text": "The portal is useful for service administration and content management, with tools for prototyping your knowledge bases, knowledge sources, indexes, indexers, skillsets, and data sources. REST APIs and SDKs are useful for production automation.",
+      "chunk_id": "doc_001_paragraph_019"
+    },
+    {
+      "text": "Before you get started, use this checklist to make key decisions:",
+      "chunk_id": "doc_001_paragraph_020"
+    },
+    {
+      "text": "These quickstarts and samples are available to help you get started.",
+      "chunk_id": "doc_001_paragraph_021"
+    },
+    {
+      "text": "Microsoft maintains samples that use REST APIs and supported SDK programming languages:",
+      "chunk_id": "doc_001_paragraph_022"
+    },
+    {
+      "text": "Tip",
+      "chunk_id": "doc_001_paragraph_023"
+    },
+    {
+      "text": "For help with complex or custom solutions, contact a partner with deep expertise in Azure AI Search.",
+      "chunk_id": "doc_001_paragraph_024"
+    }
+  ]
+}
